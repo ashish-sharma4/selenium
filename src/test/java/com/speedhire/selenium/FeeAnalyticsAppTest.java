@@ -64,7 +64,98 @@ public class FeeAnalyticsAppTest {
     }
 
     @Test
-    public void testFindStudentsIdWithPendingFee() {
+    public void testFindStudentsIdWithPendingFee1() {
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee1(driver, studentPageUrl);
+
+        List<String> expected = new ArrayList<>();
+        for (int i = 1; i <= studentSeed; i++) {
+            if ((feeSeed + i) % i != 0) {
+                expected.add("" + i);
+            }
+        }
+
+        System.out.println(" Actual: \n" + actual + "\n Expected: \n" + expected);
+
+        Assert.assertEquals(expected.size(), actual.size());
+        for (String actualStudentId : actual) {
+            Assert.assertTrue(expected.contains(actualStudentId));
+        }
+    }
+
+        @Test
+    public void testFindStudentsIdWithPendingFee2() {
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee2(driver, studentPageUrl);
+
+        List<String> expected = new ArrayList<>();
+        for (int i = 1; i <= studentSeed; i++) {
+            if ((feeSeed + i) % i != 0) {
+                expected.add("" + i);
+            }
+        }
+
+        System.out.println(" Actual: \n" + actual + "\n Expected: \n" + expected);
+
+        Assert.assertEquals(expected.size(), actual.size());
+        for (String actualStudentId : actual) {
+            Assert.assertTrue(expected.contains(actualStudentId));
+        }
+    }
+            @Test
+    public void testFindStudentsIdWithPendingFee3() {
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee3(driver, studentPageUrl);
+
+        List<String> expected = new ArrayList<>();
+        for (int i = 1; i <= studentSeed; i++) {
+            if ((feeSeed + i) % i != 0) {
+                expected.add("" + i);
+            }
+        }
+
+        System.out.println(" Actual: \n" + actual + "\n Expected: \n" + expected);
+
+        Assert.assertEquals(expected.size(), actual.size());
+        for (String actualStudentId : actual) {
+            Assert.assertTrue(expected.contains(actualStudentId));
+        }
+    }
+            @Test
+    public void testFindStudentsIdWithPendingFee4() {
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
+
+        List<String> expected = new ArrayList<>();
+        for (int i = 1; i <= studentSeed; i++) {
+            if ((feeSeed + i) % i != 0) {
+                expected.add("" + i);
+            }
+        }
+
+        System.out.println(" Actual: \n" + actual + "\n Expected: \n" + expected);
+
+        Assert.assertEquals(expected.size(), actual.size());
+        for (String actualStudentId : actual) {
+            Assert.assertTrue(expected.contains(actualStudentId));
+        }
+    }
+            @Test
+    public void testFindStudentsIdWithPendingFee5() {
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
+
+        List<String> expected = new ArrayList<>();
+        for (int i = 1; i <= studentSeed; i++) {
+            if ((feeSeed + i) % i != 0) {
+                expected.add("" + i);
+            }
+        }
+
+        System.out.println(" Actual: \n" + actual + "\n Expected: \n" + expected);
+
+        Assert.assertEquals(expected.size(), actual.size());
+        for (String actualStudentId : actual) {
+            Assert.assertTrue(expected.contains(actualStudentId));
+        }
+    }
+            @Test
+    public void testFindStudentsIdWithPendingFee6() {
         List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
 
         List<String> expected = new ArrayList<>();
