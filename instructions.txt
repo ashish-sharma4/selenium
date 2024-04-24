@@ -1,0 +1,16 @@
+Build: 
+mvn clean install
+OR
+NULL
+
+Sample tests: 
+mvn clean test -Dtest=FeeAnalyticsAppTest
+junit-merge -o ./report.xml -d ./target/surefire-reports
+
+Background tests: 
+mvn clean test -Dtest=FeeAnalyticsAppTest
+junit-merge -o ./report.xml -d ./target/surefire-reports
+
+
+Report: 
+report.xml

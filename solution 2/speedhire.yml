@@ -1,0 +1,18 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - src/test/*
+    - website/*
+    - src/main/java/com/speedhire/selenium/server/*
+  scoring:
+    command: mvn clean test
+    files:
+      - target/surefire-reports/TEST-com.speedhire.selenium.FeeAnalyticsAppTest.xml
+  ide_config:
+    default_open_files:
+      - src/main/java/com/speedhire/selenium/FeeAnalytics.java
+    project_menu:
+      run: mvn clean package && java -jar target/selenium-java-fee-analytics-1.0.jar
+      install: mvn clean install
+      test: mvn clean test
