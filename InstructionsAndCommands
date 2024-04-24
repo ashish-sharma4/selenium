@@ -14,3 +14,17 @@ junit-merge -o ./report.xml -d ./target/surefire-reports
 Report: 
 report.xml
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+now you can call seed url and preview the student page.
+To create see data:
+https://[previewurl].tgig.app/seed?studentSeed=100&feeSeed=1000
+https://[previewurl].tgig.app/students
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+File to update :src/main/java/com/speedhire/selenium/FeeAnalytics.java
+File to hide/test cases: src/test/java/com/speedhire/selenium/FeeAnalyticsAppTest.java
+
+
+Solution: 
