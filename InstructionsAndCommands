@@ -28,3 +28,13 @@ File to hide/test cases: src/test/java/com/speedhire/selenium/FeeAnalyticsAppTes
 
 
 Solution: 
+cp /home/tg-user/CandidateCode/solution/src/main/java/com/speedhire/selenium/FeeAnalytics.java /home/tg-user/CandidateCode/src/main/java/com/speedhire/selenium/FeeAnalytics.java
+
+
+To run project:
+mvn clean package && java -jar target/selenium-fee-analytics-1.0.jar
+
+To run the flow:
+https://dfc77529a-1a33.tgig.app/seed?studentSeed=100&feeSeed=1000
+https://dfc77529a-1a33.tgig.app/students
+https://dfc77529a-1a33.tgig.app/payments
