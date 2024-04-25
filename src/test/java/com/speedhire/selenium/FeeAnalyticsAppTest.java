@@ -65,7 +65,7 @@ public class FeeAnalyticsAppTest {
 
     @Test
     public void testFindStudentsIdWithPendingFee1() {
-        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee1(driver, studentPageUrl);
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
 
         List<String> expected = new ArrayList<>();
         for (int i = 1; i <= studentSeed; i++) {
@@ -84,7 +84,7 @@ public class FeeAnalyticsAppTest {
 
         @Test
     public void testFindStudentsIdWithPendingFee2() {
-        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee2(driver, studentPageUrl);
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
 
         List<String> expected = new ArrayList<>();
         for (int i = 1; i <= studentSeed; i++) {
@@ -102,7 +102,7 @@ public class FeeAnalyticsAppTest {
     }
             @Test
     public void testFindStudentsIdWithPendingFee3() {
-        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee3(driver, studentPageUrl);
+        List<String> actual = FeeAnalytics.findStudentsIdWithPendingFee(driver, studentPageUrl);
 
         List<String> expected = new ArrayList<>();
         for (int i = 1; i <= studentSeed; i++) {
